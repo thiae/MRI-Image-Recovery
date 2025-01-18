@@ -1,5 +1,5 @@
 # MRI-Image-Recovery
-This project solves an imputation problem where we created a neural network that learns how to recover missing portions of an image
+This project solves an imputation problem where we created a neural network that learns how to recover missing portions of an image.
 
 # 🧠 MRI Image Recovery: Deep Learning Assessment
 
@@ -38,10 +38,13 @@ The objective is to:
 - **Visualize Data**:
   - Display 10 training and 10 test images, along with corresponding labels where applicable.
 
-### Part 3: Neural Network Design
+### Part 3: Neural Network Design and Training
 - **Model Architecture**:
-  - Design a neural network architecture for image reconstruction.
-  - Train the network on the synthetic dataset, ensuring it can generalize to the corrupted test set.
+  - Design a neural network architecture to recover missing image lines.
+  - Train the network using the dataset created in Part 2. Pre-trained models are not allowed.
+  - Display 10 images from the test set with the recovered lines filled in.
+- **Save Reconstructed Images**:
+  - Save the reconstructed test images into a numpy file, `test_set_nogaps.npy`. Ensure the images are in the same order and size (64x64 pixels) as in the original `test_set.npy` file.
 
 ---
 
@@ -50,7 +53,7 @@ The objective is to:
 1. **Dataset Generation**:
    - Leveraged the provided generative model to create realistic MRI brain images.
    - Corrupted synthetic images to mimic the provided test set.
-   - Saved generated data to Google Drive for reuse.
+   - Saved generated data for reuse.
 
 2. **Data Preparation**:
    - Created `TensorDataset` and `DataLoader` objects for training and testing.
@@ -60,7 +63,10 @@ The objective is to:
    - Designed and trained a neural network to recover missing image portions.
    - Optimized the network using appropriate loss functions and evaluation metrics.
 
-4. **Evaluation**:
+4. **Image Reconstruction**:
+   - Reconstructed test images and saved them as `test_set_nogaps.npy`.
+
+5. **Evaluation**:
    - Assessed model performance using qualitative visualizations of reconstructed images.
 
 ---
@@ -72,6 +78,7 @@ The objective is to:
 - `data/`:
   - `test_set.npy`: Provided corrupted images.
   - `generated_images/`: Synthetic training images created using the generative model.
+  - `test_set_nogaps.npy`: Reconstructed test images with missing values filled in.
 - `models/`: Trained model architectures and weights.
 - `results/`: Visualization of reconstructed images and performance metrics.
 
@@ -86,4 +93,8 @@ This project demonstrates:
 - Visualizing and evaluating model outputs for qualitative assessment.
 
 ---
+
+## Acknowledgements
+This project was inspired by a deep learning assessment task provided in a course. Online resources, including documentation, tools, and AI assistance, were used, with proper attribution wherever applicable.
+
 
