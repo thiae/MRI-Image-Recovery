@@ -46,6 +46,12 @@ The objective is to:
 - **Save Reconstructed Images**:
   - Save the reconstructed test images into a numpy file, `test_set_nogaps.npy`. Ensure the images are in the same order and size (64x64 pixels) as in the original `test_set.npy` file.
 
+
+## Dataset Links
+- [corrupted_samples.pt](https://drive.google.com/file/d/1JYX_1GB6fy6Z9Czc8i_jvtXliKdk9h1o/view?usp=sharing)
+- [uncorrupted_samples_flattened.pt](https://drive.google.com/file/d/1OYwhOwAvJw9sF4ZUJhGbzmVwVNm-SslH/view?usp=sharing)
+- [samples.pt](https://drive.google.com/file/d/1GJ8YAoviGqBJAMxSqt8CYPnzG0qvrllX/view?usp=sharing)
+
 ---
 
 ## 🛠️ Methodology
