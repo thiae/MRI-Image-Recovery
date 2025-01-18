@@ -55,7 +55,7 @@ The objective is to:
 To load the file in PyTorch, use:
 ```python
 import torch
-data = torch.load("path/to/corrupted_samples.pt")
+data = torch.load("path/to/corrupted_samples.pt")```
 
 ---
 
